@@ -1,3 +1,3 @@
 # CPP-files
 C & C ++ Programs
-Add your C/C++ files to understand pull requests & merges.
+Add your C and C++ files to understand pull requests & merges.
