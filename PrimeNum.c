@@ -1,27 +1,23 @@
 #include <stdio.h>
+using namespace std;
 int main() {
-    int n, i, flag = 0;
-    printf("Enter a positive integer: ");
+    int n, i, count = 0;
+    printf("Enter a integer: ");
     scanf("%d", &n);
-
-    for (i = 2; i <= n / 2; ++i) {
-
-        // condition for non-prime
-        if (n % i == 0) {
-            flag = 1;
-            break;
+    for (i = 1; i <= n; i++)
+    {
+            if (n % i == 0)
+            {
+            count = count + 1;
         }
     }
 
-    if (n == 1) {
-        printf("1 is neither prime nor composite.");
+    if (count == 2) {
+        printf(" n is a prime number",n);
     }
     else {
-        if (flag == 0)
-            printf("%d is a prime number.", n);
-        else
-            printf("%d is not a prime number.", n);
+            printf( "n is not a prime number.", n);
     }
 
-    return 0;
+    getch();
 }
